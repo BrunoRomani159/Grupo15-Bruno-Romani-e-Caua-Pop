@@ -1,0 +1,31 @@
+* { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body { font-family: Arial, sans-serif; color: #24312d; line-height: 1.6; background: #ffffff; }
+header { max-width: 1000px; margin: auto; padding: 22px 24px; display: flex; align-items: center; justify-content: space-between; }
+.logo { font-size: 25px; font-weight: 800; color: #183f35; }
+.logo span, .hero h1 span { color: #26966f; }
+.nav-link { color: #3c5149; text-decoration: none; font-size: 14px; }
+.hero { text-align: center; padding: 82px 24px 90px; background: #f1f8f4; }
+.tag { display: inline-block; color: #21815f; font-size: 12px; font-weight: bold; letter-spacing: 1.5px; margin-bottom: 16px; }
+h1 { font-size: clamp(32px, 5vw, 48px); line-height: 1.15; margin-bottom: 18px; color: #183f35; }
+.hero p { max-width: 620px; margin: 0 auto 26px; color: #5c6c65; }
+.button { display: inline-block; background: #21815f; color: white; padding: 12px 22px; border-radius: 6px; text-decoration: none; font-weight: bold; }
+.button:hover { background: #176849; }
+.section, .features, .audience { max-width: 900px; margin: auto; padding: 54px 24px; }
+h2 { color: #183f35; font-size: 25px; margin-bottom: 12px; }
+.section p, .audience p { color: #5c6c65; margin-bottom: 28px; }
+.section p:last-child { margin-bottom: 0; }
+.features { max-width: 1000px; }
+.features > h2 { text-align: center; margin-bottom: 26px; }
+.cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+.card { padding: 22px; border: 1px solid #dce9e1; border-radius: 8px; background: #fff; }
+.card h3 { color: #21815f; margin-bottom: 8px; }
+.card p { color: #5c6c65; font-size: 14px; }
+.audience { padding-top: 20px; }
+.cta { background: #183f35; color: white; text-align: center; padding: 48px 24px; }
+.cta h2 { color: white; }
+.cta p { color: #dce9e1; margin-bottom: 20px; }
+.button-light { background: white; color: #183f35; }
+.button-light:hover { background: #eaf3ee; }
+footer { text-align: center; padding: 20px; color: #6d7b75; font-size: 13px; }
+@media (max-width: 650px) { .cards { grid-template-columns: 1fr; } .hero { padding: 60px 20px; } header { padding: 18px 20px; } }
