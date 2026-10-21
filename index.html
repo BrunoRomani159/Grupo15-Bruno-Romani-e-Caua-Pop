@@ -3,56 +3,141 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>HelpFlow | Manutenção mais simples</title>
+  <title>HelpFlow | Chamados de manutenção com QR Code</title>
+  <meta name="description" content="Quem vê o problema escaneia o QR Code, descreve e acompanha. Você resolve mais rápido, sem grupo de WhatsApp.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='9' fill='%2321815f'/%3E%3Cpath d='M9 16.5l4.5 4.5L23 11' stroke='%23fff' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <div class="logo">Help<span>Flow</span></div>
-    <a class="nav-link" href="#sobre">Sobre a solução</a>
+  <header class="wrap top">
+    <a class="logo" href="#" aria-label="HelpFlow">
+      <svg viewBox="0 0 32 32" width="34" height="34" aria-hidden="true"><path d="M6 5h20a3 3 0 0 1 3 3v13a3 3 0 0 1-3 3H15l-6 5v-5H6a3 3 0 0 1-3-3V8a3 3 0 0 1 3-3z" fill="#21815f"/><path d="M10.5 14.5l4 4 7-7" stroke="#fff" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span>Help<b>Flow</b></span>
+    </a>
+    <nav>
+      <a href="#telas">Telas</a>
+      <a href="#como">Como funciona</a>
+      <a class="btn btn-sm" href="#interesse">Quero testar</a>
+    </nav>
   </header>
-
+ 
   <main>
-    <section class="hero">
-      <div class="tag">GESTÃO DE MANUTENÇÃO</div>
-      <h1>Problemas no espaço?<br><span>Resolva com o HelpFlow.</span></h1>
-      <p>Uma forma simples de comunicar problemas, acompanhar chamados e organizar a manutenção de ambientes.</p>
-      <a class="button" href="#interesse">Tenho interesse</a>
-    </section>
-
-    <section id="sobre" class="section">
-      <h2>Qual problema queremos resolver?</h2>
-      <p>Problemas de manutenção podem demorar para chegar à pessoa responsável, dificultando o acompanhamento e a resolução.</p>
-      <h2>Nossa solução</h2>
-      <p>O HelpFlow reúne os relatos em um só lugar e permite acompanhar cada chamado até a conclusão.</p>
-    </section>
-
-    <section class="features">
-      <h2>O que o HelpFlow oferece?</h2>
-      <div class="cards">
-        <article class="card"><h3>Registro fácil</h3><p>Informe o problema e o local, inclusive usando um QR Code.</p></article>
-        <article class="card"><h3>Acompanhamento</h3><p>Veja o andamento dos chamados e suas atualizações.</p></article>
-        <article class="card"><h3>Mais organização</h3><p>Ajude responsáveis e prestadores a acompanhar as tarefas.</p></article>
+    <section class="hero wrap">
+      <div class="hero-text">
+        <h1>Achou um problema? Escaneie, descreva e acompanhe.</h1>
+        <p>O HelpFlow coloca um QR Code em cada sala, banheiro ou equipamento. Quem vê o defeito abre o chamado em 30 segundos, e você acompanha tudo até a conclusão, sem grupo de WhatsApp.</p>
+        <div class="actions">
+          <a class="btn" href="#interesse">Quero testar grátis</a>
+          <a class="btn btn-ghost" href="#telas">Ver o app</a>
+        </div>
+        <ul class="proof">
+          <li>Sem instalar nada: abre pelo navegador</li>
+          <li>Pronto para escolas, condomínios e empresas</li>
+        </ul>
+      </div>
+ 
+      <div class="hero-visual">
+        <div class="phone phone-main"><img class="shot" src="img/inicio.jpg" alt="Tela inicial do HelpFlow: Seu espaço, bem cuidado" width="415" height="756"></div>
+        <div class="toast"><i></i> Chamado enviado</div>
       </div>
     </section>
-
-    <section class="audience">
-      <h2>Para quem é?</h2>
-      <p>Empresas, escolas, condomínios e equipes responsáveis pela manutenção de espaços.</p>
+ 
+    <section class="band">
+      <div class="wrap band-in">
+        <p><strong>O problema:</strong> o defeito é visto por muita gente, mas o aviso se perde em conversas, e ninguém sabe se já foi resolvido.</p>
+        <p><strong>A solução:</strong> um único lugar onde cada relato vira chamado, com responsável, prazo e status.</p>
+      </div>
     </section>
-
+ 
+    <section id="telas" class="wrap screens">
+      <h2>Veja o MVP funcionando</h2>
+      <p class="lead">Telas reais do aplicativo: identificar o local, acompanhar o chamado e gerar as etiquetas.</p>
+ 
+      <div class="screen-grid" aria-label="Telas do aplicativo">
+        <figure>
+          <div class="phone"><img class="shot" src="img/qr-leitura.jpg" alt="Tela Leia o QR Code com botão Abrir câmera" width="412" height="752" loading="lazy"></div>
+          <figcaption><b>Identifique o local</b>Aponte a câmera para o QR Code da sala ou equipamento.</figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><img class="shot" src="img/chamado.jpg" alt="Tela de chamado recebido com relato, categoria e prioridade" width="412" height="752" loading="lazy"></div>
+          <figcaption><b>Acompanhe o chamado</b>Relato, categoria, prioridade e status em um só lugar.</figcaption>
+        </figure>
+        <figure>
+          <div class="phone"><img class="shot" src="img/qr-codes.jpg" alt="Tela de QR Codes com etiquetas prontas para impressão" width="415" height="758" loading="lazy"></div>
+          <figcaption><b>Gere as etiquetas</b>Um QR Code por local, pronto para imprimir e colar.</figcaption>
+        </figure>
+      </div>
+    </section>
+ 
+    <section id="como" class="how">
+      <div class="wrap">
+        <h2>Como funciona</h2>
+        <ol class="steps">
+          <li><h3>Cole o QR Code no local</h3><p>Cada sala ou equipamento ganha um código que já identifica o lugar.</p></li>
+          <li><h3>A pessoa relata o problema</h3><p>Ela escaneia, escolhe o tipo, escreve e anexa uma foto. Não precisa de cadastro.</p></li>
+          <li><h3>Você resolve e todos acompanham</h3><p>Designe um responsável, atualize o status e feche o chamado.</p></li>
+        </ol>
+      </div>
+    </section>
+ 
+    <section class="wrap benefits">
+      <h2>Por que usar o HelpFlow</h2>
+      <div class="cards">
+        <article class="card"><h3>Menos tempo perdido</h3><p>O relato chega completo, com local e foto. Chega de "onde é isso?".</p></article>
+        <article class="card"><h3>Nada fica sem resposta</h3><p>Todo chamado tem status e histórico. Quem avisou sabe o que aconteceu.</p></article>
+        <article class="card"><h3>Controle para quem gerencia</h3><p>Veja o que está atrasado, onde os problemas se repetem e o desempenho dos prestadores.</p></article>
+      </div>
+      <p class="for">Feito para <strong>escolas</strong>, <strong>condomínios</strong>, <strong>empresas</strong> e qualquer equipe que cuida de espaços.</p>
+    </section>
+ 
     <section id="interesse" class="cta">
-      <h2>Gostou da ideia?</h2>
-      <p>Clique no botão para demonstrar seu interesse pelo HelpFlow.</p>
-      <button class="button" id="interesseBtn" type="button">Tenho interesse</button>
-      <p id="mensagemInteresse" aria-live="polite"></p>
+      <div class="wrap cta-in">
+        <div class="cta-text">
+          <h2>Quer o HelpFlow no seu espaço?</h2>
+          <p>Deixe seus dados e entraremos em contato para uma demonstração e para liberar um teste gratuito.</p>
+          <ul>
+            <li>Resposta em até 1 dia útil</li>
+            <li>Demonstração sem compromisso</li>
+            <li>Ajuda para configurar os primeiros QR Codes</li>
+          </ul>
+        </div>
+ 
+        <div class="form-box">
+          <form id="leadForm" novalidate>
+            <div class="row">
+              <div class="f"><label for="nome">Nome</label><input id="nome" name="nome" autocomplete="name" required></div>
+              <div class="f"><label for="telefone">WhatsApp</label><input id="telefone" name="telefone" type="tel" autocomplete="tel" placeholder="(49) 90000-0000"></div>
+            </div>
+            <div class="f"><label for="email">E-mail</label><input id="email" name="email" type="email" autocomplete="email" required></div>
+            <div class="f"><label for="tipo">Onde você quer usar?</label>
+              <select id="tipo" name="tipo" required>
+                <option value="">Selecione</option>
+                <option>Escola</option><option>Condomínio</option><option>Empresa</option><option>Outro</option>
+              </select>
+            </div>
+            <div class="f"><label for="mensagem">Conte rapidamente sua necessidade <span>(opcional)</span></label><textarea id="mensagem" name="mensagem" rows="3"></textarea></div>
+            <input type="text" name="_honey" class="hp" tabindex="-1" autocomplete="off" aria-hidden="true">
+            <p id="erro" class="erro" role="alert" hidden></p>
+            <button class="btn btn-block" id="enviar" type="submit">Quero testar o HelpFlow</button>
+          </form>
+ 
+          <div id="sucesso" class="sucesso" hidden tabindex="-1">
+            <svg viewBox="0 0 52 52" width="64" height="64" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="#26966f" stroke-width="3"/><path d="M15 27l8 8 14-16" fill="none" stroke="#26966f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3>Recebemos seu interesse!</h3>
+            <p>Obrigado, <span id="sucessoNome"></span>. Vamos falar com você em até 1 dia útil.</p>
+          </div>
+        </div>
+      </div>
     </section>
   </main>
-
-  <footer>HelpFlow — Manutenção mais simples e organizada.
-    <a href="https://github.com/BrunoRomani159/Grupo15-Bruno-Romani-e-Caua-Pop.git" target="_blank">GitHub</a>
-    <p>Feito Por Bruno Romani e Cauã Pop</p>
-    <script src="script.js"></script>
+ 
+  <footer class="wrap foot">
+    <span class="logo-sm">Help<b>Flow</b></span>
+    <span>Manutenção mais simples e organizada.</span>
   </footer>
+  <script src="script.js"></script>
 </body>
 </html>
