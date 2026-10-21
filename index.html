@@ -23,7 +23,7 @@
       <a class="btn btn-sm" href="#interesse">Quero testar</a>
     </nav>
   </header>
- 
+
   <main>
     <section class="hero wrap">
       <div class="hero-text">
@@ -38,24 +38,24 @@
           <li>Pronto para escolas, condomínios e empresas</li>
         </ul>
       </div>
- 
+
       <div class="hero-visual">
         <div class="phone phone-main"><img class="shot" src="img/inicio.jpg" alt="Tela inicial do HelpFlow: Seu espaço, bem cuidado" width="415" height="756"></div>
         <div class="toast"><i></i> Chamado enviado</div>
       </div>
     </section>
- 
+
     <section class="band">
       <div class="wrap band-in">
         <p><strong>O problema:</strong> o defeito é visto por muita gente, mas o aviso se perde em conversas, e ninguém sabe se já foi resolvido.</p>
         <p><strong>A solução:</strong> um único lugar onde cada relato vira chamado, com responsável, prazo e status.</p>
       </div>
     </section>
- 
+
     <section id="telas" class="wrap screens">
       <h2>Veja o MVP funcionando</h2>
       <p class="lead">Telas reais do aplicativo: identificar o local, acompanhar o chamado e gerar as etiquetas.</p>
- 
+
       <div class="screen-grid" aria-label="Telas do aplicativo">
         <figure>
           <div class="phone"><img class="shot" src="img/qr-leitura.jpg" alt="Tela Leia o QR Code com botão Abrir câmera" width="412" height="752" loading="lazy"></div>
@@ -71,18 +71,41 @@
         </figure>
       </div>
     </section>
- 
+
+    <section class="wrap mvp">
+      <h2>O que o MVP já faz</h2>
+      <p class="lead">A primeira versão já cobre o caminho completo, da etiqueta ao chamado resolvido.</p>
+      <dl class="mvp-list">
+        <div><dt>Leitura de QR Code</dt><dd>Pela câmera do celular ou por uma foto da etiqueta, sem digitar o local.</dd></div>
+        <div><dt>Cadastro de locais</dt><dd>Registre salas e equipamentos e acompanhe quais etiquetas estão ativas.</dd></div>
+        <div><dt>Etiquetas para imprimir</dt><dd>Gere o QR Code de cada local, baixe em PNG ou imprima várias de uma vez.</dd></div>
+        <div><dt>Chamados com código</dt><dd>Cada relato recebe um número único, com categoria, prioridade, solicitante e data de abertura.</dd></div>
+        <div><dt>Link de cada chamado</dt><dd>Copie o link e envie para quem precisa ver ou resolver.</dd></div>
+        <div><dt>Notificações e várias empresas</dt><dd>Receba avisos das atualizações e alterne entre empresas ou espaços na mesma conta.</dd></div>
+      </dl>
+    </section>
+
     <section id="como" class="how">
       <div class="wrap">
         <h2>Como funciona</h2>
+        <p class="lead">Do QR Code colado na parede até o problema resolvido, em três passos.</p>
         <ol class="steps">
-          <li><h3>Cole o QR Code no local</h3><p>Cada sala ou equipamento ganha um código que já identifica o lugar.</p></li>
-          <li><h3>A pessoa relata o problema</h3><p>Ela escaneia, escolhe o tipo, escreve e anexa uma foto. Não precisa de cadastro.</p></li>
-          <li><h3>Você resolve e todos acompanham</h3><p>Designe um responsável, atualize o status e feche o chamado.</p></li>
+        <li class="step-row">
+          <img src="img/passo-1.png" alt="Aluno escaneando um QR Code colado na parede" width="670" height="520" loading="lazy">
+          <div class="step-text"><span class="num">1</span><h3>Cole o QR Code no local</h3><p>Cadastre cada sala, banheiro ou equipamento no painel e gere uma etiqueta única. Imprima, cole no lugar e pronto: o código já sabe onde está.</p><ul><li>Cadastro de locais em poucos cliques</li><li>Etiquetas prontas para imprimir ou baixar em PNG</li><li>Um QR Code por local, sem confusão</li></ul></div>
+        </li>
+        <li class="step-row">
+          <img src="img/passo-2.png" alt="Mulher usando o celular para fotografar um problema, com ícones de poste, banco, vazamento e piso rachado" width="625" height="520" loading="lazy">
+          <div class="step-text"><span class="num">2</span><h3>A pessoa relata o problema</h3><p>Quem vê o defeito aponta a câmera para o QR Code. O formulário abre já no local certo, e ela só escolhe o tipo de problema, descreve e envia.</p><ul><li>Leitura pela câmera ou por uma foto da etiqueta</li><li>Categorias como elétrica, hidráulica e estrutura</li><li>Relato curto, com foto para facilitar o reparo</li></ul></div>
+        </li>
+        <li class="step-row">
+          <img src="img/passo-3.png" alt="Profissional de manutenção com prancheta conversando com uma moradora, com um check de resolvido" width="590" height="550" loading="lazy">
+          <div class="step-text"><span class="num">3</span><h3>Você resolve e todos acompanham</h3><p>Cada chamado ganha um código próprio, como HF-A16E12A2, com status, prioridade e histórico. Quem avisou vê a resolução sem precisar perguntar.</p><ul><li>Status do chamado: do Novo até a conclusão</li><li>Link para copiar e compartilhar com a equipe</li><li>Notificações a cada atualização</li></ul></div>
+        </li>
         </ol>
       </div>
     </section>
- 
+
     <section class="wrap benefits">
       <h2>Por que usar o HelpFlow</h2>
       <div class="cards">
@@ -90,9 +113,29 @@
         <article class="card"><h3>Nada fica sem resposta</h3><p>Todo chamado tem status e histórico. Quem avisou sabe o que aconteceu.</p></article>
         <article class="card"><h3>Controle para quem gerencia</h3><p>Veja o que está atrasado, onde os problemas se repetem e o desempenho dos prestadores.</p></article>
       </div>
-      <p class="for">Feito para <strong>escolas</strong>, <strong>condomínios</strong>, <strong>empresas</strong> e qualquer equipe que cuida de espaços.</p>
+      <h3 class="env-title">Feito para o seu tipo de espaço</h3>
+      <div class="envs">
+        <article class="env">
+          <img src="img/escolas.png" alt="Professora apresentando a escola a alunos em sala de aula" width="724" height="724" loading="lazy">
+          <h4>Escolas</h4>
+          <p>Muitas salas, banheiros e pátios, e poucas pessoas para olhar tudo. Com o HelpFlow, quem passa pelo local avisa na hora.</p>
+          <ul><li>Professores e funcionários relatam pelo QR Code da sala</li><li>Lâmpadas, carteiras, goteiras e banheiros chegam à direção com local e foto</li><li>A equipe de manutenção vê o que está pendente e prioriza o que afeta as aulas</li></ul>
+        </article>
+        <article class="env">
+          <img src="img/condominios.png" alt="Morador usando o celular em frente a um prédio residencial" width="724" height="724" loading="lazy">
+          <h4>Condomínios</h4>
+          <p>Moradores e porteiros enxergam os problemas antes do síndico. O HelpFlow transforma cada aviso em um chamado registrado.</p>
+          <ul><li>Corredores, garagem, portão, elevador e áreas de lazer com QR Code próprio</li><li>O síndico acompanha o andamento e cobra os prestadores com histórico</li><li>Quem avisou vê a resposta e a resolução, sem precisar cobrar no grupo</li></ul>
+        </article>
+        <article class="env">
+          <img src="img/empresas.png" alt="Funcionário com colete usando um tablet em frente a uma loja" width="724" height="724" loading="lazy">
+          <h4>Empresas</h4>
+          <p>Lojas, escritórios e filiais precisam de manutenção rápida para não parar a operação. Cada unidade tem seus locais e chamados.</p>
+          <ul><li>Equipes relatam falhas em equipamentos, ar-condicionado e instalações</li><li>O gestor separa por unidade, vê prioridades e acompanha o prazo</li><li>Mais de uma empresa ou unidade na mesma conta, com troca rápida</li></ul>
+        </article>
+      </div>
     </section>
- 
+
     <section id="interesse" class="cta">
       <div class="wrap cta-in">
         <div class="cta-text">
@@ -104,7 +147,7 @@
             <li>Ajuda para configurar os primeiros QR Codes</li>
           </ul>
         </div>
- 
+
         <div class="form-box">
           <form id="leadForm" novalidate>
             <div class="row">
@@ -123,7 +166,7 @@
             <p id="erro" class="erro" role="alert" hidden></p>
             <button class="btn btn-block" id="enviar" type="submit">Quero testar o HelpFlow</button>
           </form>
- 
+
           <div id="sucesso" class="sucesso" hidden tabindex="-1">
             <svg viewBox="0 0 52 52" width="64" height="64" aria-hidden="true"><circle cx="26" cy="26" r="24" fill="none" stroke="#26966f" stroke-width="3"/><path d="M15 27l8 8 14-16" fill="none" stroke="#26966f" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
             <h3>Recebemos seu interesse!</h3>
@@ -133,7 +176,7 @@
       </div>
     </section>
   </main>
- 
+
   <footer class="wrap foot">
     <span class="logo-sm">Help<b>Flow</b></span>
     <span>Manutenção mais simples e organizada.</span>
